@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+
+    --box-shadow: 2px 2px 12px grey;
+    --border:  2rem solid rgba(0,0,0,.1);
+         
+}
+
+body {
+
+    font-family: Andika;
+    background-color:rgb(60, 193, 164);
+
+}
+
+header {
+
+    font-family: Andika;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px;
+    background:  rgb(0, 120, 92);
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 1rem 3%;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+
+}
+
+header img {
+
+    height: 80px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 10%;
+    
+}
+
+header .headerbar a{
+
+    font-size: 1.5rem;
+    border-radius: .2rem;
+    padding: .5rem 1.5rem;
+    color: white;
+
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+}
+
+nav a {
+
+    margin-left: 10%;
+    font-size: 1.7rem;
+    border-radius: .7rem;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+
+}
+
+body {
+
+    margin: 0px;
+
+}
+
+.picture4 img {
+
+    margin-left: 10%;
+    margin-right: 6%;
+    margin-top: 2%;
+    float: left;
+    width: 160px;
+    height: 160px;
+
+}
+
+.picture4 h2 {
+
+    padding-right: 14%;
+    padding-top: 5%;
+    margin-bottom: 12%;
+    text-align: left;
+    background-color: white;
+    background-position-x: right;
+    font-size: 15px;
+    height: 160px;
+    box-shadow: var(--box-shadow);
+    
+}
+
+body .Calculator{
+
+    padding-top: 5%;
+    display: grid;
+    place-items: center;
+}
+
+.Calculator{
+    gap: 1rem;
+}
+
+.Calculator div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.Calculator input{
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    outline-color: #555;
+    font-size: 1.25rem;
+    text-align: center;
+}
+
+.Calculator button{
+    width: 200px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    background: #459dd8;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.Calculator button[type="reset"]{
+    background: #444;
+}
+
+.Calculator button:hover{
+    filter:brightness(120%);
+}
+
+.container{
+    width: 90%;
+    max-width: 420px;
+    background: #fff;
+    padding: 1rem;
+    border-radius: 10px;
+    margin: 0 auto;
+    box-shadow: var(--box-shadow);
+}
+
+.container h1 {
+    text-align: center;
+}
+
+p{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.output{
+    text-align: center;
+}
+
+.output #bmi{
+    font-size: 3rem;
+}
+
+.output #desc strong{
+    text-transform: uppercase;
+}
+
+.bmi-scale{
+    display: flex;
+}
+
+.bmi-scale div{
+    flex: 1;
+    text-align: center;
+    text-transform: uppercase;
+    border-top: 5px solid var(--color);
+}
+
+.bmi-scale h4{
+    font-size: 0.75rem;
+    color: slategray;
+}
+
+.Underweight{
+    color:var(--underweight)
+}
+
+.Healthy{
+    color: var(--normal)
+}
+
+.Overweight{
+    color: var(--overweight)
+}
+
+.Obese{
+    color: var(--obese)
+}

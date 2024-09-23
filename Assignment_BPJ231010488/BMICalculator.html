@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="BMIStyle.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo">
+        <img src="picture/picture1.png">
+        </a>
+
+        <nav class="headerbar">
+            <a href="Assignment.html">Homepage</a>
+            <a href="HealthInfoPage.html">Health Info Page</a>
+            <a href="BMICalculator.html">BMI Calculator</a>
+        </nav>
+    </header>
+    <div class="picture4">
+        <b><img src="picture/picture4.png"></b>
+        <h2>BMI stands for Body Mass Index. It is a numerical value derived from a person's weight and height and is used to categorize individuals into different weight status categories. BMI is a widely used tool to assess whether a person has a healthy body weight for a given height.</h2>
+    </div>
+    <div class="container">
+        <h1>BMI Calculator</h1>
+
+        <form class="Calculator">
+            <div>
+                <label for="weight">Weight (KG)</label>
+                <input type="number" id="weight" min="0" step="0.01" value="0"/>
+            </div>
+
+            <div>
+                <label for="height">Height (CM)</label>
+                <input type="number" id="height" min="0" step="0.01" value="0"/>
+            </div>
+
+            <div>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+
+            </div>
+        </form>
+
+        <section class="output">
+            <h3>Your BMI is</h3>
+            <p id="bmi">0</p>
+            <p id="desc">N/A</p>
+        </section>
+
+        <section class="bmi-scale">
+            <div>
+                <h4>Underweight</h4>
+                <p>&lt; 18.5</p>
+            </div>
+
+            <div>
+                <h4>Normal</h4>
+                <p>18.5 - 25</p>
+            </div>
+            
+            <div>
+                <h4>Overweight</h4>
+                <p>25 - 30</p>
+            </div>  
+
+            <div>
+                <h4>Obese</h4>
+                <p>30</p>
+            </div>  
+</body>
+</html>

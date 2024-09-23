@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root{
+    --box-shadow: 2px 2px 12px grey;
+    --border:  2rem solid rgba(0,0,0,.1);    
+}
+
+html{
+    scroll-padding-top: 7rem;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Andika;
+    margin: 0;
+    background-color: rgb(60, 193, 164);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 13px;
+    background:  rgb(0, 120, 92);
+    border: 1px solid;
+    justify-content: space-between;
+    padding: 1rem 3%;
+    z-index: 1000;
+    box-shadow: var(--box-shadow);
+
+}
+
+header img {
+    height: 80px;
+    width: 100px;
+    margin-left: 20px;
+    margin-right: 10%;
+}
+
+header .headerbar a{
+
+    font-size: 1.5rem;
+    border-radius: .2rem;
+    padding: .5rem 1.5rem;
+    color: white;
+    text-align: center;
+
+}
+
+.left img {
+
+    display:flex;
+    width: 50px;
+    height: 50px;
+
+}
+
+nav {
+    flex-grow: 1;
+    display: flex;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav a {
+    margin-left: 10%;
+    font-size: 1.7rem;
+    border-radius: .7rem;
+    color: rgb(0, 0, 0);
+    padding: 14px 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.container .heading{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}
+
+.container hr{
+    display: block;
+    margin-top: 0.5rem;
+    margin-left: 30px;
+    border-style: inset;
+    border-width: 3px;
+}
+
+.top .box-container {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 100px;
+}
+
+.top .box-container .box{
+    height: 80%;
+    width: 100%; 
+    padding: 3rem 1.5rem; 
+    background: #fff;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.top .box-container .box img{
+    margin: 1rem 0;
+    height: 10rem;
+    width: 90%;
+}
+
+.bottom .box-container {
+    padding: 6rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 100px;
+}
+
+.bottom .box-container .box{
+    height: 80%;
+    width: 100%; 
+    padding: 3rem 1.5rem; 
+    background: #fff;
+    text-align: center;
+    box-shadow: var(--box-shadow);
+}
+
+.bottom .box-container .box img{
+    margin: 1rem 0;
+    height: 10rem;
+    width: 80%;
+}
